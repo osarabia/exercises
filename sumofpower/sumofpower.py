@@ -16,12 +16,12 @@ class SumOfPower(object):
 
      def isValidArray(self, arr):
          if len(arr) < 1 or len(arr) > 50:
-             raise "Array length should between 1 and 50"
+             raise Exception("Array length should between 1 and 50")
 
          newArr = [element for element in arr if element < 1 or element > 100]
 
          if len(newArr) > 0:
-             raise "Invalid element on Array"
+             raise Exception("Invalid element on Array")
 
 if __name__ == "__main__":
    sumOfPower = SumOfPower()
