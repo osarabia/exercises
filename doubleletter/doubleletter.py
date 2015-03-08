@@ -23,7 +23,7 @@ class DoubleLetter(object):
 
 
     def isValidString(self, string):
-       if len(string) < 1 and len(string) > 50:
+       if len(string) < 1 or len(string) > 50:
           raise "String length should be between 1 and 50 characters"
 
        if not bool(re.compile('^[a-z]+$').match(string)):
